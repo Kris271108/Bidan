@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artikel — Bidan Ny. TMM Djamini</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='20' r='19' fill='%23ec4899'/%3E%3Cpath d='M13 22c0-5 3-9 7-9s7 4 7 9-3 7-7 7-7-2-7-7z' fill='%23fff'/%3E%3Ccircle cx='20' cy='15' r='3.2' fill='%23fff'/%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=Work+Sans:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .article-detail-wrap {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 140px 24px 100px 24px;
+      }
+      .article-detail-back {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: var(--muted);
+        font-weight: 600;
+        font-size: 13.5px;
+        margin-bottom: 28px;
+      }
+      .article-detail-back:hover {
+        color: var(--pink-deep);
+      }
+      .article-detail-cover {
+        aspect-ratio: 16/8;
+        margin-bottom: 32px;
+      }
+      .article-detail-date {
+        font-size: 12px;
+        font-weight: 700;
+        color: var(--pink-deep);
+        text-transform: uppercase;
+        letter-spacing: 0.4px;
+        margin-bottom: 10px;
+      }
+      .article-detail-title {
+        font-size: 32px;
+        font-weight: 800;
+        line-height: 1.25;
+        margin-bottom: 28px;
+      }
+      .article-detail-body {
+        font-size: 15.5px;
+        line-height: 1.85;
+        color: #4a3841;
+      }
+      .article-detail-body p {
+        margin: 0 0 20px 0;
+      }
+      .article-detail-body h3 {
+        font-size: 18px;
+        margin: 32px 0 12px 0;
+      }
+      .article-cta-box {
+        margin-top: 44px;
+        background: var(--pink-pale);
+        border-radius: 20px;
+        padding: 30px;
+        text-align: center;
+      }
+      .article-cta-box p {
+        font-size: 14px;
+        color: var(--ink);
+        font-weight: 600;
+        margin-bottom: 16px;
+      }
+      .disclaimer-box {
+        margin-top: 30px;
+        padding: 16px 20px;
+        background: #fdf2f8;
+        border-left: 3px solid var(--pink);
+        border-radius: 10px;
+        font-size: 12.5px;
+        color: var(--muted);
+        line-height: 1.6;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="hero-nav" style="position: fixed; top: 0; left: 0; right: 0; z-index: 50; background: #fff; border-bottom: 1px solid rgba(32,18,23,0.08);">
+      <div class="hero-logo" style="color: var(--ink)">
+        <a href="index.html" style="color: inherit">Bidan Ny. TMM Djamini</a>
+      </div>
+      <div class="hero-nav-links">
+        <a href="index.html#layanan" style="color: var(--ink)">Layanan</a>
+        <a href="index.html#tentang" style="color: var(--ink)">Tentang</a>
+        <a href="index.html#artikel" style="color: var(--ink)">Artikel</a>
+        <a href="index.html#kontak" style="color: var(--ink)">Kontak</a>
+      </div>
+      <a href="index.html#booking" class="btn btn-dark">Buat Janji</a>
+    </nav>
+
+    <div class="article-detail-wrap" id="article-detail-wrap">
+      <!-- Diisi otomatis lewat JS sesuai ?slug= di URL -->
+    </div>
+
+    <footer>
+      &copy; 2026 Bidan Ny. TMM Djamini. Praktik mandiri terdaftar &amp; berizin.
+    </footer>
+
+    <script>
+      "use strict";
+
+      const ARTICLES = {
+        "tanda-persalinan": {
+          date: "12 Maret 2026",
+          title: "Tanda-Tanda Persalinan yang Perlu Diwaspadai",
+          body: `
+            <p>Mendekati Hari Perkiraan Lahir (HPL), banyak ibu hamil yang mulai
+            was-was membedakan mana kontraksi palsu (Braxton Hicks) dan mana
+            tanda persalinan yang sesungguhnya. Mengenali perbedaannya penting
+            supaya tidak terlambat maupun terlalu cepat panik.</p>
+            <h3>Tanda-tanda yang perlu diperhatikan</h3>
+            <p>Kontraksi yang datang semakin sering, semakin kuat, dan semakin
+            teratur — biasanya jaraknya semakin dekat seiring waktu — adalah
+            tanda paling umum bahwa persalinan sudah dekat. Berbeda dengan
+            kontraksi palsu yang biasanya hilang kalau ibu berganti posisi atau
+            beristirahat.</p>
+            <p>Tanda lain yang perlu diwaspadai: keluarnya lendir bercampur
+            darah (bloody show), pecahnya air ketuban (baik berupa rembesan
+            maupun pecah sekaligus dalam jumlah banyak), serta nyeri di
+            punggung bawah yang menjalar ke perut secara berirama.</p>
+            <h3>Kapan harus segera menghubungi bidan</h3>
+            <p>Segera hubungi bidan atau datang ke fasilitas kesehatan kalau
+            air ketuban sudah pecah, kontraksi sudah teratur setiap 5 menit
+            sekali selama lebih dari satu jam, atau kalau muncul perdarahan
+            yang banyak. Jangan menunggu terlalu lama di rumah kalau tanda
+            tersebut sudah muncul.</p>
+          `,
+        },
+        "nutrisi-trimester-tiga": {
+          date: "28 Februari 2026",
+          title: "Nutrisi Penting di Trimester Ketiga",
+          body: `
+            <p>Memasuki trimester ketiga, kebutuhan energi dan nutrisi ibu
+            hamil meningkat cukup signifikan — tubuh sedang mempersiapkan
+            tenaga untuk proses persalinan sekaligus mendukung pertumbuhan
+            janin yang semakin pesat menjelang kelahiran.</p>
+            <h3>Zat gizi yang perlu diperhatikan</h3>
+            <p>Zat besi tetap jadi prioritas untuk mencegah anemia yang bisa
+            berdampak pada stamina saat persalinan. Kalsium dan protein juga
+            penting untuk pertumbuhan tulang dan otot bayi di fase akhir
+            kehamilan ini.</p>
+            <p>Serat dari sayur, buah, dan biji-bijian membantu mengurangi
+            keluhan sembelit yang umum terjadi di trimester ini akibat tekanan
+            rahim pada usus. Jangan lupa cukupi cairan agar tidak dehidrasi.</p>
+            <h3>Porsi makan lebih sering, jumlah lebih sedikit</h3>
+            <p>Karena perut yang tertekan rahim membesar, makan dalam porsi
+            lebih kecil namun lebih sering (5-6 kali sehari) biasanya lebih
+            nyaman dibanding tiga kali makan besar. Ini juga membantu menjaga
+            gula darah tetap stabil menjelang persalinan.</p>
+          `,
+        },
+        "jadwal-imunisasi-dasar": {
+          date: "15 Februari 2026",
+          title: "Jadwal Imunisasi Dasar Lengkap 0–12 Bulan",
+          body: `
+            <p>Imunisasi dasar lengkap adalah salah satu cara paling efektif
+            melindungi anak dari penyakit-penyakit yang bisa dicegah. Berikut
+            gambaran umum jadwalnya — untuk jadwal pasti, tetap konsultasikan
+            ke bidan atau dokter anak karena bisa menyesuaikan kondisi anak.</p>
+            <h3>Bulan-bulan pertama</h3>
+            <p>Di usia 0 bulan (baru lahir), bayi umumnya mendapat imunisasi
+            Hepatitis B dan Polio tetes pertama. Memasuki usia 1 bulan, ada
+            imunisasi BCG untuk mencegah TBC.</p>
+            <h3>Usia 2–4 bulan</h3>
+            <p>Rentang usia ini biasanya jadwal untuk imunisasi DPT-HB-Hib
+            (kombinasi difteri, pertusis, tetanus, hepatitis B, dan Hib) serta
+            Polio, yang diberikan bertahap dalam tiga dosis.</p>
+            <h3>Usia 9 bulan ke atas</h3>
+            <p>Imunisasi Campak/MR biasanya diberikan di usia 9 bulan, dengan
+            imunisasi lanjutan (booster) di usia 18 bulan untuk beberapa jenis
+            vaksin. Mencatat setiap jadwal di buku KIA sangat membantu supaya
+            tidak ada yang terlewat.</p>
+          `,
+        },
+      };
+
+      const params = new URLSearchParams(window.location.search);
+      const slug = params.get("slug");
+      const article = ARTICLES[slug];
+      const wrap = document.getElementById("article-detail-wrap");
+
+      function escapeHtml(v) {
+        return String(v || "")
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;");
+      }
+
+      if (article) {
+        document.title = article.title + " — Bidan Ny. TMM Djamini";
+        wrap.innerHTML = `
+          <a href="index.html#artikel" class="article-detail-back">
+            <i class="fa-solid fa-arrow-left"></i> Kembali ke Semua Artikel
+          </a>
+          <div class="img-placeholder article-detail-cover">
+            <i class="fa-regular fa-image"></i>
+            <span>Foto artikel</span>
+          </div>
+          <div class="article-detail-date">${escapeHtml(article.date)}</div>
+          <h1 class="article-detail-title">${escapeHtml(article.title)}</h1>
+          <div class="article-detail-body">${article.body}</div>
+          <div class="disclaimer-box">
+            <strong>Catatan:</strong> Artikel ini bersifat edukasi umum dan
+            tidak menggantikan pemeriksaan langsung oleh tenaga kesehatan.
+            Setiap kehamilan berbeda — selalu konsultasikan kondisi Anda
+            dengan bidan atau dokter.
+          </div>
+          <div class="article-cta-box">
+            <p>Ada pertanyaan seputar topik ini?</p>
+            <a href="index.html#booking" class="btn btn-dark">
+              <i class="fa-solid fa-calendar-check"></i> Buat Janji Konsultasi
+            </a>
+          </div>
+        `;
+      } else {
+        wrap.innerHTML = `
+          <a href="index.html#artikel" class="article-detail-back">
+            <i class="fa-solid fa-arrow-left"></i> Kembali ke Semua Artikel
+          </a>
+          <p>Artikel tidak ditemukan.</p>
+        `;
+      }
+    </script>
+  </body>
+</html>

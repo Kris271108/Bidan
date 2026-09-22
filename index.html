@@ -1,0 +1,587 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bidan Ny. TMM Djamini — Pendampingan Ibu &amp; Anak</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='20' r='19' fill='%23ec4899'/%3E%3Cpath d='M13 22c0-5 3-9 7-9s7 4 7 9-3 7-7 7-7-2-7-7z' fill='%23fff'/%3E%3Ccircle cx='20' cy='15' r='3.2' fill='%23fff'/%3E%3C/svg%3E"
+    />
+    <meta
+      name="description"
+      content="Bidan Ny. TMM Djamini — praktik bidan mandiri di Damun. Melayani pemeriksaan kehamilan (ANC), pendampingan persalinan, imunisasi anak, konsultasi KB, dan pijat bayi & nifas. Buat janji lewat WhatsApp."
+    />
+    <meta property="og:title" content="Bidan Ny. TMM Djamini — Pendampingan Ibu & Anak" />
+    <meta
+      property="og:description"
+      content="Praktik bidan mandiri di Damun. Pemeriksaan kehamilan, persalinan, imunisasi, KB, dan pijat bayi — didampingi dengan tenang."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=Work+Sans:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="hero-bg"></div>
+
+      <nav class="hero-nav">
+        <div class="hero-logo">Bidan Ny. TMM Djamini</div>
+        <div class="hero-nav-links" id="hero-nav-links">
+          <a href="#layanan">Layanan</a>
+          <a href="#tentang">Tentang</a>
+          <a href="#artikel">Artikel</a>
+          <a href="#kontak">Kontak</a>
+        </div>
+        <a href="#booking" class="btn btn-dark">Buat Janji</a>
+        <button class="hero-menu-btn" id="hero-menu-btn" aria-label="Buka Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
+
+      <div class="mobile-nav-overlay" id="mobile-nav-overlay">
+        <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Tutup Menu">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <a href="#layanan">Layanan</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#artikel">Artikel</a>
+        <a href="#kontak">Kontak</a>
+        <a href="#booking" class="btn btn-dark" style="margin-top: 10px">Buat Janji</a>
+      </div>
+
+      <div class="hero-main">
+        <div class="hero-grid">
+          <div>
+            <div class="eyebrow hero-eyebrow">Praktik Bidan Mandiri &mdash; Damun</div>
+            <h1 class="hero-title">
+              Pendampingan<br />
+              <span class="hero-accent-photo"><i class="fa-solid fa-heart"></i></span>Lembut untuk<br />
+              Ibu &amp; Anak
+            </h1>
+          </div>
+          <div class="hero-stats" id="hero-stats">
+            <div>
+              <div class="hero-stat-num" data-count="2400" data-suffix="+">0</div>
+              <div class="hero-stat-label">Persalinan Didampingi</div>
+            </div>
+            <div>
+              <div class="hero-stat-num" data-count="15" data-suffix="+">0</div>
+              <div class="hero-stat-label">Tahun Pengalaman</div>
+            </div>
+            <div>
+              <div class="hero-stat-num" data-count="500" data-suffix="+">0</div>
+              <div class="hero-stat-label">Ibu Terlayani Tiap Tahun</div>
+            </div>
+            <div>
+              <div class="hero-stat-num">4.9/5</div>
+              <div class="hero-stat-label">Rata-Rata Kepuasan Pasien</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-bottom">
+        <div>
+          <p class="hero-desc">
+            Dari pemeriksaan kehamilan sampai tumbuh kembang anak, Bidan TMM
+            Djamini mendampingi dengan waktu bicara yang cukup — bukan
+            sekadar antre dan pulang.
+          </p>
+          <div class="hero-cta-row">
+            <a href="#booking" class="btn btn-dark">
+              <i class="fa-solid fa-calendar-check"></i> Buat Janji Temu
+            </a>
+            <a href="#kontak" class="btn btn-outline-light" id="wa-btn-hero">
+              <i class="fa-brands fa-whatsapp"></i> Konsultasi WhatsApp
+            </a>
+          </div>
+        </div>
+        <button class="scroll-btn"><i class="fa-solid fa-arrow-down"></i></button>
+      </div>
+    </section>
+
+    <!-- ===== CAROUSEL: Semua yang dibutuhkan ===== -->
+    <section class="carousel-section" id="layanan">
+      <div class="wrap">
+        <div class="carousel-head">
+          <div>
+            <h2>Semua yang ibu butuhkan, dalam satu tempat.</h2>
+            <p>
+              Tidak perlu pindah-pindah tempat periksa atau mengulang riwayat
+              kesehatan dari nol setiap kali. Satu bidan, satu catatan,
+              didampingi sampai tuntas.
+            </p>
+          </div>
+          <div class="carousel-arrows">
+            <button class="arrow-btn" id="carousel-prev"><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="arrow-btn" id="carousel-next"><i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+        <div class="card-row" id="card-row">
+          <div class="photo-card c1">
+            <div class="photo-card-icon"><i class="fa-solid fa-stethoscope"></i></div>
+            <div class="img-placeholder-tag"><i class="fa-regular fa-image"></i> Foto</div>
+            <div class="photo-card-text">
+              <h3>Pendampingan Menyeluruh</h3>
+              <p>Dari pemeriksaan awal sampai pemulihan pasca-persalinan.</p>
+            </div>
+          </div>
+          <div class="photo-card c2">
+            <div class="photo-card-icon"><i class="fa-solid fa-baby-carriage"></i></div>
+            <div class="img-placeholder-tag"><i class="fa-regular fa-image"></i> Foto</div>
+            <div class="photo-card-text">
+              <h3>Persalinan Tenang</h3>
+              <p>Didampingi langsung dengan komunikasi terbuka ke keluarga.</p>
+            </div>
+          </div>
+          <div class="photo-card c3">
+            <div class="photo-card-icon"><i class="fa-solid fa-vial-circle-check"></i></div>
+            <div class="img-placeholder-tag"><i class="fa-regular fa-image"></i> Foto</div>
+            <div class="photo-card-text">
+              <h3>Pemeriksaan Modern</h3>
+              <p>Peralatan lengkap dengan hasil yang cepat dijelaskan.</p>
+            </div>
+          </div>
+          <div class="photo-card c4">
+            <div class="photo-card-icon"><i class="fa-solid fa-calendar-check"></i></div>
+            <div class="img-placeholder-tag"><i class="fa-regular fa-image"></i> Foto</div>
+            <div class="photo-card-text">
+              <h3>Jadwal Fleksibel</h3>
+              <p>Buat janji online, tanpa perlu antre lama di tempat.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BOOKING FORM ===== -->
+    <section class="booking-section" id="booking">
+      <div class="wrap">
+        <div class="booking-grid">
+          <div class="booking-info">
+            <div class="eyebrow" style="color: var(--pink-deep)">Buat Janji</div>
+            <h2>Isi form ini, kami balas lewat WhatsApp.</h2>
+            <p>
+              Tidak perlu telepon atau datang dulu ke tempat. Isi data di
+              samping, kirim, dan tim kami akan konfirmasi jadwal secepatnya
+              lewat WhatsApp.
+            </p>
+            <div class="booking-steps-mini">
+              <div class="booking-mini-step">
+                <span>1</span> Isi data & layanan yang dibutuhkan
+              </div>
+              <div class="booking-mini-step">
+                <span>2</span> Klik "Kirim via WhatsApp"
+              </div>
+              <div class="booking-mini-step">
+                <span>3</span> Tunggu konfirmasi jadwal dari kami
+              </div>
+            </div>
+          </div>
+          <form class="booking-form" id="booking-form">
+            <div class="form-row">
+              <label for="bf-name">Nama Lengkap</label>
+              <input type="text" id="bf-name" required placeholder="Nama Anda" />
+            </div>
+            <div class="form-row">
+              <label for="bf-phone">No. WhatsApp</label>
+              <input type="tel" id="bf-phone" required placeholder="08xxxxxxxxxx" />
+            </div>
+            <div class="form-row">
+              <label for="bf-service">Layanan yang Dibutuhkan</label>
+              <select id="bf-service">
+                <option>Periksa Kehamilan (ANC)</option>
+                <option>Pendampingan Persalinan</option>
+                <option>Imunisasi Anak</option>
+                <option>Konsultasi KB</option>
+                <option>Pijat Bayi &amp; Nifas</option>
+                <option>Lainnya / Konsultasi Umum</option>
+              </select>
+            </div>
+            <div class="form-row form-row-split">
+              <div>
+                <label for="bf-date">Tanggal</label>
+                <input type="date" id="bf-date" />
+              </div>
+              <div>
+                <label for="bf-time">Waktu</label>
+                <select id="bf-time">
+                  <option value="">Pilih waktu</option>
+                  <option>Pagi (08.00–12.00)</option>
+                  <option>Siang (12.00–16.00)</option>
+                  <option>Sore (16.00–20.00)</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <label for="bf-notes">Catatan (opsional)</label>
+              <textarea id="bf-notes" rows="3" placeholder="Keluhan atau hal lain yang ingin disampaikan"></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark" style="width: 100%; justify-content: center">
+              <i class="fa-brands fa-whatsapp"></i> Kirim via WhatsApp
+            </button>
+            <p class="form-note">
+              Data hanya digunakan untuk keperluan konfirmasi jadwal, tidak
+              dibagikan ke pihak lain.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SPECIALTY / LAYANAN LENGKAP ===== -->
+    <section class="specialty-section">
+      <div class="wrap">
+        <div class="specialty-head">
+          <div>
+            <h2>Layanan lengkap untuk setiap kebutuhan.</h2>
+            <p>Akses layanan ibu &amp; anak tanpa perlu berpindah-pindah tempat.</p>
+          </div>
+          <div style="display:flex; gap:12px; flex-wrap:wrap;">
+            <a href="#booking" class="btn btn-dark">Buat Janji</a>
+            <a href="#kontak" class="btn btn-outline-dark">Hubungi Kami</a>
+          </div>
+        </div>
+        <div class="specialty-row">
+          <div class="specialty-tile">
+            <i class="fa-solid fa-stethoscope"></i>
+            <span>Periksa Kehamilan</span>
+          </div>
+          <div class="specialty-tile">
+            <i class="fa-solid fa-baby-carriage"></i>
+            <span>Persalinan</span>
+          </div>
+          <div class="specialty-tile">
+            <i class="fa-solid fa-syringe"></i>
+            <span>Imunisasi Anak</span>
+          </div>
+          <div class="specialty-tile">
+            <i class="fa-solid fa-hand-holding-heart"></i>
+            <span>Konsultasi KB</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TENTANG ===== -->
+    <section class="about-section" id="tentang">
+      <div class="wrap">
+        <div class="about-grid">
+          <div class="img-placeholder about-photo">
+            <i class="fa-regular fa-image"></i>
+            <span>Foto: Bidan Ny. TMM Djamini<br />bersama pasien</span>
+          </div>
+          <div class="about-text">
+            <div class="eyebrow">Tentang Kami</div>
+            <h2>Praktik mandiri yang dipercaya warga sekitar.</h2>
+            <p>
+              Bidan Ny. TMM Djamini telah melayani ibu dan anak di sekitar
+              Damun selama lebih dari 15 tahun. Kami percaya setiap ibu
+              berhak didampingi dengan tenang, dijelaskan dengan jelas, dan
+              didengar keluhannya — bukan sekadar diperiksa lalu pulang.
+            </p>
+            <p>
+              Setiap kunjungan diberi waktu bicara yang cukup, supaya ibu dan
+              keluarga benar paham kondisi kehamilan atau tumbuh kembang
+              anaknya, bukan sekadar keluar dengan resep di tangan.
+            </p>
+            <div class="about-credentials">
+              <div class="about-credential">
+                <i class="fa-solid fa-certificate"></i> STR Aktif &amp; Terdaftar Kemenkes
+              </div>
+              <div class="about-credential">
+                <i class="fa-solid fa-house-medical"></i> Siaga Persalinan 24 Jam
+              </div>
+              <div class="about-credential">
+                <i class="fa-solid fa-graduation-cap"></i> D3/D4 Kebidanan Bersertifikat
+              </div>
+            </div>
+            <p style="font-size: 11.5px; color: var(--muted); margin-top: 18px;">
+              *Nomor STR/SIPB &amp; riwayat pendidikan resmi bisa ditambahkan
+              di sini setelah data lengkap tersedia.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ARTIKEL ===== -->
+    <section class="article-section" id="artikel">
+      <div class="wrap">
+        <div class="carousel-head">
+          <div>
+            <h2>Bacaan seputar kehamilan &amp; tumbuh kembang anak.</h2>
+            <p>Wawasan singkat yang bisa dibaca sebelum atau sesudah kunjungan.</p>
+          </div>
+        </div>
+        <div class="article-grid-row">
+          <a href="artikel-detail.html?slug=tanda-persalinan" class="article-card">
+            <div class="img-placeholder">
+              <i class="fa-regular fa-image"></i>
+              <span>Foto artikel</span>
+            </div>
+            <div class="article-card-body">
+              <div class="article-card-date">12 Maret 2026</div>
+              <h3>Tanda-Tanda Persalinan yang Perlu Diwaspadai</h3>
+              <p>Kapan waktunya berangkat ke bidan, dan kapan masih bisa menunggu di rumah.</p>
+            </div>
+          </a>
+          <a href="artikel-detail.html?slug=nutrisi-trimester-tiga" class="article-card">
+            <div class="img-placeholder">
+              <i class="fa-regular fa-image"></i>
+              <span>Foto artikel</span>
+            </div>
+            <div class="article-card-body">
+              <div class="article-card-date">28 Februari 2026</div>
+              <h3>Nutrisi Penting di Trimester Ketiga</h3>
+              <p>Makanan yang membantu persiapan tenaga ibu menjelang persalinan.</p>
+            </div>
+          </a>
+          <a href="artikel-detail.html?slug=jadwal-imunisasi-dasar" class="article-card">
+            <div class="img-placeholder">
+              <i class="fa-regular fa-image"></i>
+              <span>Foto artikel</span>
+            </div>
+            <div class="article-card-body">
+              <div class="article-card-date">15 Februari 2026</div>
+              <h3>Jadwal Imunisasi Dasar Lengkap 0–12 Bulan</h3>
+              <p>Panduan sederhana supaya tidak ada jadwal yang terlewat.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== KONTAK ===== -->
+    <section class="contact-section" id="kontak">
+      <div class="wrap">
+        <div class="contact-grid">
+          <div class="contact-map">
+            <iframe
+              src="https://www.google.com/maps?q=Bidan+Ny+TMM+Djamini+Damun&output=embed"
+              width="100%"
+              height="100%"
+              style="border: 0; min-height: 320px"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Lokasi Bidan Ny. TMM Djamini di Damun"
+            ></iframe>
+          </div>
+          <div class="contact-details">
+            <div class="eyebrow" style="color:var(--pink)">Kontak</div>
+            <h2>Ada yang mau ditanyakan dulu?</h2>
+            <p>
+              Boleh langsung hubungi lewat WhatsApp atau datang ke praktik —
+              kami senang menjawab pertanyaan sebelum kamu memutuskan.
+            </p>
+            <div class="contact-line">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>Bidan Ny. TMM Djamini,<br />Damun</div>
+            </div>
+            <div class="contact-line">
+              <i class="fa-solid fa-clock"></i>
+              <div>Senin–Sabtu, 08.00–20.00<br />Siaga persalinan 24 jam</div>
+            </div>
+            <div class="contact-line">
+              <i class="fa-solid fa-phone"></i>
+              <div>0812-3456-7890</div>
+            </div>
+            <a href="#" class="btn btn-dark" id="wa-btn-kontak">
+              <i class="fa-brands fa-whatsapp"></i> Chat WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p style="max-width: 640px; margin: 0 auto 14px auto; font-size: 12px; line-height: 1.6; opacity: 0.7;">
+        Informasi di situs ini bersifat umum dan tidak menggantikan
+        pemeriksaan atau konsultasi langsung dengan tenaga kesehatan. Data
+        yang Anda kirim lewat form hanya digunakan untuk keperluan
+        konfirmasi jadwal dan tidak dibagikan ke pihak ketiga.
+      </p>
+      &copy; 2026 Bidan Ny. TMM Djamini. Praktik mandiri terdaftar &amp; berizin.
+    </footer>
+
+    <script>
+      "use strict";
+
+      // ===== Menu mobile =====
+      const menuBtn = document.getElementById("hero-menu-btn");
+      const mobileOverlay = document.getElementById("mobile-nav-overlay");
+      const mobileClose = document.getElementById("mobile-nav-close");
+      if (menuBtn && mobileOverlay) {
+        menuBtn.addEventListener("click", () => {
+          mobileOverlay.classList.add("open");
+        });
+      }
+      if (mobileClose && mobileOverlay) {
+        mobileClose.addEventListener("click", () => {
+          mobileOverlay.classList.remove("open");
+        });
+      }
+      mobileOverlay?.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => mobileOverlay.classList.remove("open"));
+      });
+
+      // ===== Carousel: panah geser kartu layanan =====
+      const cardRow = document.getElementById("card-row");
+      const prevBtn = document.getElementById("carousel-prev");
+      const nextBtn = document.getElementById("carousel-next");
+      function scrollCards(dir) {
+        if (!cardRow) return;
+        const card = cardRow.querySelector(".photo-card");
+        const step = card ? card.getBoundingClientRect().width + 18 : 300;
+        cardRow.scrollBy({ left: dir * step, behavior: "smooth" });
+      }
+      prevBtn?.addEventListener("click", () => scrollCards(-1));
+      nextBtn?.addEventListener("click", () => scrollCards(1));
+
+      // ===== Statistik: animasi hitung naik saat pertama kali terlihat =====
+      function animateCount(el) {
+        const target = parseInt(el.dataset.count, 10) || 0;
+        const suffix = el.dataset.suffix || "";
+        const duration = 1400;
+        const startTime = performance.now();
+        function tick(now) {
+          const progress = Math.min((now - startTime) / duration, 1);
+          const eased = 1 - Math.pow(1 - progress, 3);
+          const value = Math.round(target * eased);
+          el.textContent = value.toLocaleString("id-ID") + suffix;
+          if (progress < 1) requestAnimationFrame(tick);
+        }
+        requestAnimationFrame(tick);
+      }
+      const heroStats = document.getElementById("hero-stats");
+      if (heroStats) {
+        const statObserver = new IntersectionObserver(
+          (entries, obs) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                heroStats
+                  .querySelectorAll(".hero-stat-num[data-count]")
+                  .forEach(animateCount);
+                obs.disconnect();
+              }
+            });
+          },
+          { threshold: 0.4 },
+        );
+        statObserver.observe(heroStats);
+      }
+
+      // ===== Scroll-reveal: section muncul halus saat digulir =====
+      const revealTargets = document.querySelectorAll(
+        ".carousel-section, .specialty-section, .about-section, .article-section, .contact-section",
+      );
+      const revealObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("in-view");
+            }
+          });
+        },
+        { threshold: 0.12 },
+      );
+      revealTargets.forEach((el) => {
+        el.classList.add("reveal-section");
+        revealObserver.observe(el);
+      });
+
+      // ===== Tombol WhatsApp: buka chat dengan pesan otomatis =====
+      const WHATSAPP_NUMBER = "6281234567890";
+      function openWhatsApp(customMessage) {
+        const defaultMsg =
+          "Halo Bidan Ny. TMM Djamini, saya ingin bertanya seputar layanan pemeriksaan/konsultasi.";
+        const message = encodeURIComponent(customMessage || defaultMsg);
+        window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`, "_blank");
+      }
+      document.getElementById("wa-btn-hero")?.addEventListener("click", (e) => {
+        e.preventDefault();
+        openWhatsApp();
+      });
+      document.getElementById("wa-btn-kontak")?.addEventListener("click", (e) => {
+        e.preventDefault();
+        openWhatsApp();
+      });
+
+      // ===== Form Booking: kirim isian sebagai pesan WhatsApp =====
+      const bookingForm = document.getElementById("booking-form");
+      bookingForm?.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const name = document.getElementById("bf-name").value.trim();
+        const phone = document.getElementById("bf-phone").value.trim();
+        const service = document.getElementById("bf-service").value;
+        const date = document.getElementById("bf-date").value;
+        const time = document.getElementById("bf-time").value;
+        const notes = document.getElementById("bf-notes").value.trim();
+
+        if (!name || !phone) {
+          alert("Mohon isi nama dan nomor WhatsApp dulu, ya.");
+          return;
+        }
+
+        let dateText = "";
+        if (date) {
+          const d = new Date(date + "T00:00:00");
+          dateText = d.toLocaleDateString("id-ID", {
+            day: "numeric",
+            month: "long",
+            year: "numeric",
+          });
+        }
+
+        const lines = [
+          "*PERMINTAAN JANJI TEMU*",
+          "----------------------------------",
+          `Nama: ${name}`,
+          `No. WhatsApp: ${phone}`,
+          `Layanan: ${service}`,
+        ];
+        if (dateText) lines.push(`Tanggal: ${dateText}`);
+        if (time) lines.push(`Waktu: ${time}`);
+        if (notes) lines.push(`Catatan: ${notes}`);
+        lines.push("----------------------------------");
+        lines.push("Mohon infokan ketersediaan jadwalnya. Terima kasih!");
+
+        openWhatsApp(lines.join("\n"));
+      });
+
+      // ===== Highlight menu aktif saat scroll =====
+      const sections = ["layanan", "tentang", "artikel", "kontak"]
+        .map((id) => document.getElementById(id))
+        .filter(Boolean);
+      const navLinks = document.querySelectorAll(".hero-nav-links a");
+      const navObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              navLinks.forEach((link) => {
+                link.style.color =
+                  link.getAttribute("href") === "#" + entry.target.id
+                    ? "#fff"
+                    : "";
+              });
+            }
+          });
+        },
+        { threshold: 0.5 },
+      );
+      sections.forEach((sec) => navObserver.observe(sec));
+    </script>
+  </body>
+</html>
